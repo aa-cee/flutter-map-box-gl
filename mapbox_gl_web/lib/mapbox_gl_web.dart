@@ -16,7 +16,7 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart' hide Element;
+// import 'package:flutter/material.dart' hide Element;
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:mapbox_gl_platform_interface/mapbox_gl_platform_interface.dart';
