@@ -107,7 +107,7 @@ class MapboxWebGlPlatform extends MapboxGlPlatform
         _onMapResize();
       });
     });
-    resizeObserver.observe(document.body as Element);
+    resizeObserver.observe(document.body!);
   }
 
   void _loadFromAssets(Event event) async {
@@ -232,9 +232,8 @@ class MapboxWebGlPlatform extends MapboxGlPlatform
 
   @override
   Future<void> matchMapLanguageWithDeviceDefault() async {
-    // setMapLanguage(
-    //     WidgetsBinding.instance.platformDispatcher.locale.languageCode);
-    setMapLanguage(ui.window.locale.languageCode);
+    setMapLanguage(
+        WidgetsBinding.instance.platformDispatcher.locale.languageCode);
   }
 
   @override
