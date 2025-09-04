@@ -232,8 +232,9 @@ class MapboxWebGlPlatform extends MapboxGlPlatform
 
   @override
   Future<void> matchMapLanguageWithDeviceDefault() async {
-    setMapLanguage(
-        WidgetsBinding.instance.platformDispatcher.locale.languageCode);
+    // setMapLanguage(
+    //     WidgetsBinding.instance.platformDispatcher.locale.languageCode);
+    setMapLanguage(ui.window.locale.languageCode);
   }
 
   @override
